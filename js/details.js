@@ -1,3 +1,5 @@
+const urlParams = Object.fromEntries((new URLSearchParams(window.location.search)).entries());
+
 (async function bootstrap() {
   try {
     movieDetails = await getMovieDetails()
